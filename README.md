@@ -26,3 +26,18 @@ The Chandy-Lamport algorithm works as follows:
     - The recorded state consists of the local state and the messages recorded on each channel.
 
 The global state is the combination of all recorded local states and the state of all channels.
+
+## Repository Contents
+
+The repository contains the following files and directories:
+
+- `test_data/`: Directory containing test data used for validating the algorithm.
+- `common.go`: Go source file with common utility functions and data structures used across the implementation.
+- `go.mod`: Go module file defining the module's path and dependencies.
+- `logger.go`: Go source file implementing logging functionalities for the distributed system.
+- `node.go`: Go source file defining the `Node` structure and methods, representing a process in the distributed system.
+- `queue.go`: Go source file containing implementation of a queue data structure used for message passing between nodes.
+- `sim.go`: Go source file responsible for simulating the distributed system and running the snapshot algorithm.
+- `snapshot_test.go`: Go source file with tests for the Chandy-Lamport distributed snapshot algorithm implementation.
+- `test_common.go`: Go source file with common functions and data structures used in tests.
+
